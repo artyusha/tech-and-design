@@ -1,0 +1,451 @@
+/**
+ * fonts
+ */
+
+@font-face {
+  font-family: "Campton Bold";
+  src: url("../fonts/Campton-Bold.eot") format("eot"),
+    url("../fonts/Campton-Bold.ttf") format("ttf"),
+    url("../fonts/Campton-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Campton Light";
+  src: url("../fonts/Campton-LightDEMO.eot") format("eot"),
+    url("../fonts/Campton-LightDEMO.ttf") format("ttf"),
+    url("../fonts/Campton-LightDEMO.woff") format("woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+
+/**
+ * page
+ */
+
+.page {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  width: 1020px;
+  margin: 0 auto;
+
+  color: #ffffff;
+
+  background-color: #3e3b4a;
+}
+
+.page__header {
+  padding-top: 70px;
+  padding-bottom: 75px;
+}
+
+/**
+ * header
+ */
+
+.header {
+  grid-column: span 12;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__button {
+  display: block;
+  padding-left: 32px;
+  height: 19px;
+  font-family: "Campton Bold", sans-serif;
+  font-size: 12px;
+  color: #898691;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  background-image: url("../images/header/menu-icon.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 22px 19px;
+  background-size: 22px 19px;
+  border: none;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  opacity: 0.75;
+}
+
+.header__button:active {
+  opacity: 0.5;
+}
+
+.header__logo {
+  width: 111px;
+  height: 60px;
+}
+
+.header__search {
+  color: #898691;
+  font-size: 12px;
+  font-family: "Campton Bold", sans-serif;
+  text-transform: uppercase;
+  width: 100px;
+  height: 21px;
+  padding-right: 25px;
+  border: none;
+  background: #3e3b4a url("../images/header/search.png");
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  box-sizing: border-box;
+}
+
+.header__search::-webkit-input-placeholder {
+  color: #898691;
+  font-size: 12px;
+  font-family: "Campton Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+.header__search:-ms-input-placeholder {
+  color: #898691;
+  font-size: 12px;
+  font-family: "Campton Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+.header__search::-ms-input-placeholder {
+  color: #898691;
+  font-size: 12px;
+  font-family: "Campton Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+.header__search::placeholder {
+  color: #898691;
+  font-size: 12px;
+  font-family: "Campton Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+/**
+ * section
+ */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.section--home {
+  grid-column: span 12;
+  min-height: 515px;
+  margin-bottom: 20px;
+  background-image: url("../images/product/main-bg.jpg");
+}
+
+.section__category {
+  margin-bottom: 5px;
+  font-family: "Campton Bold", sans-serif;
+  color: #ffc7b0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.section__title {
+  margin-top: 0;
+  font-family: "Campton Bold", sans-serif;
+}
+
+.section__title--home {
+  margin-bottom: 13px;
+  font-size: 72px;
+  width: 235px;
+  line-height: 1.1;
+}
+
+.section__description {
+  margin-top: 0;
+  margin-bottom: auto;
+  width: 308px;
+  font-family: "Campton Light", sans-serif;
+}
+
+.section__description--home {
+  font-size: 36px;
+}
+
+.section__button {
+  display: inline-block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 3px solid #ffe18f;
+  font-family: "Campton Bold", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.section__button:hover {
+  color: #3d3c4a;
+
+  background-color: #ffe18e;
+
+  transition-duration: 0.3s;
+}
+
+.section__button:active {
+  opacity: 0.75;
+  transition-duration: 0.3s;
+}
+
+.section--accesseories {
+  grid-column: span 8;
+  min-height: 484px;
+  background-image: url("../images/product/peak-bg.jpg");
+}
+
+.section__title--accesseories {
+  margin-bottom: 10px;
+  font-size: 48px;
+}
+
+.section__description--accesseories {
+  font-size: 24px;
+  width: 201px;
+}
+
+.feedback {
+  grid-column: span 4;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 67px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 67px;
+  box-sizing: border-box;
+  background-color: #eb7b61;
+  text-align: center;
+}
+
+.feedback__form {
+	margin-bottom: 30px;
+}
+
+.feedback__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 48px;
+}
+
+.feedback__description {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 35px;
+  padding-top: 15px;
+  width: 280px;
+  font-size: 24px;
+  font-family: "Old Standard TT", sans-serif;
+}
+
+.feedback__description::before {
+  content: "...";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  font-size: 24px;
+  font-family: "Old Standard TT", sans-serif;
+  transform: translateX(-50%);
+  letter-spacing: 1px;
+  line-height: 1px;
+}
+
+.feedback__input,
+.feedback__button {
+  display: block;
+}
+
+.feedback__input {
+  width: 100%;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  background-color: #eb7b61;
+  text-align: center;
+  border: 4px solid #ffd9d1;
+  box-sizing: border-box;
+}
+
+.feedback__input::-webkit-input-placeholder {
+  color: #ffd9d1;
+  font-size: 20px;
+  font-family: "Campton Bold", sans-serif;
+}
+
+.feedback__input:-ms-input-placeholder {
+  color: #ffd9d1;
+  font-size: 20px;
+  font-family: "Campton Bold", sans-serif;
+}
+
+.feedback__input::-ms-input-placeholder {
+  color: #ffd9d1;
+  font-size: 20px;
+  font-family: "Campton Bold", sans-serif;
+}
+
+.feedback__input::placeholder {
+  color: #ffd9d1;
+  font-size: 20px;
+  font-family: "Campton Bold", sans-serif;
+}
+
+.feedback__button {
+  width: 100%;
+  height: 42px;
+  background-color: #66689c;
+  font-family: "Campton Bold", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback__button:hover {
+  opacity: 0.75;
+  transition-duration: 0.3s;
+}
+
+.feedback__button:active {
+  opacity: 0.5;
+  transition-duration: 0.3s;
+}
+
+.feedback__paragraph {
+  width: 260px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Campton Light", sans-serif;
+  font-size: 14px;
+}
+
+.section--cameras,
+.section--sound {
+  grid-column: span 3;
+  min-height: 420px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.section--cameras {
+  background-image: url("../images/product/leica-m.jpg");
+}
+
+.section--sound {
+  background-image: url("../images/product/trobla.jpg");
+}
+
+.section__title--sound,
+.section__title--cameras {
+  margin-bottom: 0;
+}
+
+.section__button--review {
+  color: #3d3c4a;
+  background-color: #ffe18e;
+}
+
+.section__button--review:hover {
+  opacity: 0.75;
+  transition-duration: 0.3s;
+}
+
+.section__button--review:active {
+  opacity: 0.5;
+  transition-duration: 0.3s;
+}
+
+.section--leica {
+  grid-column: span 6;
+  min-height: 420px;
+  background-image: url("../images/product/leica-d.jpg");
+}
+
+.section__title--leica {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.section__description--leica {
+  width: 215px;
+  font-size: 20px;
+}
+
+.footer {
+  grid-column: span 12;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.footer__copyright {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Campton Light", sans-serif;
+  font-size: 14px;
+  color: #898691;
+}
+
+.footer__social-list {
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.footer__social-item {
+  margin-right: 22px;
+}
+
+.footer__social-link {
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.footer__social-link:hover {
+  opacity: 0.75;
+}
+
+.footer__social-link:active {
+  opacity: 0.5;
+}
+
+.footer__social-link--facebook {
+  width: 13px;
+  height: 24px;
+  background-image: url("../images/footer/facebook.png");
+}
+
+.footer__social-link--twitter {
+  width: 23px;
+  height: 20px;
+  background-image: url("../images/footer/twitter.png");
+}
